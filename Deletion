@@ -201,3 +201,27 @@ int main()
 		printf("%d ", arr[i]); 
 
 }
+
+
+// Just ignore the code written after line 206
+#!/bin/bash
+echo -n "Enter a Number: "
+read number
+i=2
+f=0
+k=$(( $number/2))
+
+while [[ $i -le $k ]]
+do
+	if  [[ $(($number % $i)) -eq 0 ]] 
+	then
+		f=1
+	fi
+	i=$(($i+1))
+done
+if [[ $f -eq 1 ]]
+then
+	echo "not prime"
+else
+	echo "prime"
+fi
